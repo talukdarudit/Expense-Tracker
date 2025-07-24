@@ -18,7 +18,8 @@ PORT=5001
 JWT_SECRET=...
 
 NODE_ENV=development
-```
+```<img width="1920" height="1031" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/72d432ea-4d65-4101-860f-7c8a55a56f99" />
+
 
 ## Deployment
 
