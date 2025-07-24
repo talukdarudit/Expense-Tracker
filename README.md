@@ -3,6 +3,8 @@ This app helps employees to keep track of their expenses. Employees can add an e
 The admin can view all expenses, filter them and change the status(pending, approved, rejected).
 The admin can also get insights about the expenses (total expenses per category and monthly expenses).
 
+![Demo App](/frontend/public/screenshot(29).png)
+
 Highlights:
 
 - 🌟 Tech stack: MERN + TailwindCSS + Daisy UI
