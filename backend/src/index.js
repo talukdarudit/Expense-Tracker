@@ -13,7 +13,10 @@ const PORT = process.env.PORT;
 
 const app = express();
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://expense-tracker-frontend-p53h.onrender.com",
+];
 
 app.use(
   cors({
