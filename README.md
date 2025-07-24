@@ -24,14 +24,14 @@ NODE_ENV=development
 
 To deploy this project
 
-```bash
+```shell
   cd backend
   npm install
   npm start
 ```
 then,
 
-```bash
+```shell
   cd frontend
   npm install
   npm run dev
