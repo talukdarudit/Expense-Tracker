@@ -4,7 +4,6 @@ import EmployeePage from "./pages/EmployeePage";
 import AdminPage from "./pages/AdminPage";
 import SignUpPage from "./pages/SignUpPage";
 import LoginPage from "./pages/LoginPage";
-import ProfilePage from "./pages/ProfilePage";
 
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useAuthStore } from "./store/useAuthStore";
