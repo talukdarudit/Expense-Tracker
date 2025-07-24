@@ -92,11 +92,6 @@ const App = () => {
           path="/login"
           element={!authUser ? <LoginPage /> : <Navigate to={getHomeRoute()} />}
         />
-
-        <Route
-          path="/profile"
-          element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
-        />
       </Routes>
 
       <Toaster />
