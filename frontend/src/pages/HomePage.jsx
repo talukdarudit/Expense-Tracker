@@ -1,13 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  Plus,
-  X,
-  DollarSign,
-  Calendar,
-  Tag,
-  Pencil,
-  Trash2,
-} from "lucide-react";
+import { Plus, X, Pencil, Trash2 } from "lucide-react";
 import toast from "react-hot-toast";
 import { useExpenseStore } from "../store/useExpenseStore";
 
