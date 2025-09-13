@@ -43,7 +43,9 @@ export const useExpenseStore = create((set, get) => ({
     try {
       await axiosInstance.put(`/expenses/${id}/edit`, expenseData);
       set((state) => ({
-        expenses: [...state.expenses, res.data],
+        expenses: state.expenses.map((expense) =>
+          expense._id === id ? { ...expense, ...expenseData } : expense
+        ),
       }));
       toast.success("Expense updated successfully");
     } catch (error) {
@@ -57,7 +59,7 @@ export const useExpenseStore = create((set, get) => ({
     try {
       await axiosInstance.delete(`/expenses/${id}/delete`);
       set((state) => ({
-        expenses: [...state.expenses, res.data],
+        expenses: state.expenses.filter((expense) => expense._id !== id),
       }));
       toast.success("Expense deleted successfully");
     } catch (error) {

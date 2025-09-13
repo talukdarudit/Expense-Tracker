@@ -10,7 +10,7 @@ const HomePage = () => {
 
   const [formData, setFormData] = useState({
     title: "",
-    amount: "",
+    amount: 0,
     category: "",
     date: "",
   });
@@ -132,7 +132,10 @@ const HomePage = () => {
             <div className="stat-value">
               $
               {expenses
-                .reduce((total, expense) => total + (expense.amount || 0), 0)
+                .reduce(
+                  (total, expense) => total + Number(expense.amount || 0),
+                  0
+                )
                 .toFixed(2)}
             </div>
           </div>
@@ -292,9 +295,7 @@ const HomePage = () => {
                   {expenses.map((expense) => (
                     <tr key={expense._id || expense.id}>
                       <td>{expense.title}</td>
-                      <td className="font-semibold">
-                        ${expense.amount ? expense.amount.toFixed(2) : "0.00"}
-                      </td>
+                      <td className="font-semibold">${expense.amount}</td>
                       <td>
                         <div className="badge badge-outline">
                           {expense.category}
